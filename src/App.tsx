@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import { fetchQuizQuestions, Difficulty, QuestionState } from "./API";
-import QuestionCard from "./components/QuestionCard";
 import { GlobalStyle } from "./App.Styles";
+import { Button } from "@material-ui/core";
+import QuestionCard from "./components/QuestionCard";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import { Button, Switch } from "@material-ui/core";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import Radio from "@material-ui/core/Radio";
@@ -29,15 +24,13 @@ const App: React.FC = () => {
 	const [score, setScore] = useState(0);
 	const [gameOver, setGameOver] = useState(true);
 	const [totalQuestion, setTotalQuestion] = useState(5);
+	const [difficulty, setDifficulty] = useState("easy");
 
 	const startTrivia = async () => {
 		setLoading(true);
 		setGameOver(false);
 
-		const newQuestions = await fetchQuizQuestions(
-			totalQuestion,
-			Difficulty.EASY
-		);
+		const newQuestions = await fetchQuizQuestions(totalQuestion, difficulty);
 
 		setQuestions(newQuestions);
 		setScore(0);
@@ -80,28 +73,63 @@ const App: React.FC = () => {
 		setTotalQuestion(event.target.value);
 	};
 
+	const handleChangeDifficulty = (event: any) => {
+		setDifficulty(event.target.value);
+	};
+
 	return (
 		<>
 			<GlobalStyle />
 			<div className="App">
 				<h1>Trivia Night Quiz!</h1>
 				{gameOver || userAnswers.length === totalQuestion ? (
-					<p>How many questions would you like to solve?</p>
+					<p>Number of Questions:</p>
 				) : null}
+
+				<span>
+					{gameOver || userAnswers.length === totalQuestion ? (
+						<FormControl component="fieldset">
+							<RadioGroup
+								defaultValue="5"
+								onChange={handleChangeTotalNumberOfQuestion}
+							>
+								<FormControlLabel value="5" control={<Radio />} label="5" />
+								<FormControlLabel value="10" control={<Radio />} label="10" />
+								<FormControlLabel value="20" control={<Radio />} label="20" />
+							</RadioGroup>
+						</FormControl>
+					) : null}
+				</span>
+				<span>
+					{gameOver || userAnswers.length === totalQuestion ? (
+						<p>Select Difficulty:</p>
+					) : null}
+					{gameOver || userAnswers.length === totalQuestion ? (
+						<FormControl component="fieldset">
+							<RadioGroup defaultValue="easy" onChange={handleChangeDifficulty}>
+								<FormControlLabel
+									value="easy"
+									control={<Radio />}
+									label="easy"
+								/>
+								<FormControlLabel
+									value="medium"
+									control={<Radio />}
+									label="medium"
+								/>
+								<FormControlLabel
+									value="hard"
+									control={<Radio />}
+									label="hard"
+								/>
+							</RadioGroup>
+						</FormControl>
+					) : null}
+				</span>
 				<p></p>
-				{gameOver || userAnswers.length === totalQuestion ? (
-					<FormControl component="fieldset">
-						<RadioGroup
-							defaultValue="5"
-							onChange={handleChangeTotalNumberOfQuestion}
-						>
-							<FormControlLabel value="5" control={<Radio />} label="5" />
-							<FormControlLabel value="10" control={<Radio />} label="10" />
-							<FormControlLabel value="20" control={<Radio />} label="20" />
-							<FormControlLabel value="30" control={<Radio />} label="30" />
-						</RadioGroup>
-					</FormControl>
-				) : null}
+
+				<p></p>
+
 				<p></p>
 				{gameOver || userAnswers.length === totalQuestion ? (
 					<Button variant="contained" color="primary" onClick={startTrivia}>
@@ -135,6 +163,12 @@ const App: React.FC = () => {
 						<ArrowForwardIcon />
 					</Button>
 				) : null}
+
+				{!loading && !gameOver && (
+					<Button variant="contained" color="primary" onClick={startTrivia}>
+						Startover
+					</Button>
+				)}
 			</div>
 		</>
 	);
