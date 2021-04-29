@@ -76,61 +76,63 @@ const App: React.FC = () => {
 	const handleChangeDifficulty = (event: any) => {
 		setDifficulty(event.target.value);
 	};
+	const gameExit = (event: any) => {
+		setGameOver(true);
+	};
 
 	return (
 		<>
 			<GlobalStyle />
 			<div className="App">
 				<h1>Trivia Night Quiz!</h1>
-				{gameOver || userAnswers.length === totalQuestion ? (
-					<p>Number of Questions:</p>
-				) : null}
-
-				<span>
-					{gameOver || userAnswers.length === totalQuestion ? (
-						<FormControl component="fieldset">
-							<RadioGroup
-								defaultValue="5"
-								onChange={handleChangeTotalNumberOfQuestion}
-							>
-								<FormControlLabel value="5" control={<Radio />} label="5" />
-								<FormControlLabel value="10" control={<Radio />} label="10" />
-								<FormControlLabel value="20" control={<Radio />} label="20" />
-							</RadioGroup>
-						</FormControl>
-					) : null}
-				</span>
-				<span>
-					{gameOver || userAnswers.length === totalQuestion ? (
-						<p>Select Difficulty:</p>
-					) : null}
-					{gameOver || userAnswers.length === totalQuestion ? (
-						<FormControl component="fieldset">
-							<RadioGroup defaultValue="easy" onChange={handleChangeDifficulty}>
-								<FormControlLabel
-									value="easy"
-									control={<Radio />}
-									label="easy"
-								/>
-								<FormControlLabel
-									value="medium"
-									control={<Radio />}
-									label="medium"
-								/>
-								<FormControlLabel
-									value="hard"
-									control={<Radio />}
-									label="hard"
-								/>
-							</RadioGroup>
-						</FormControl>
-					) : null}
-				</span>
-				<p></p>
-
-				<p></p>
-
-				<p></p>
+				<div className="flex-container">
+					<div className="flex-item">
+						{gameOver || userAnswers.length === totalQuestion ? (
+							<p>Number of Questions:</p>
+						) : null}
+						{gameOver || userAnswers.length === totalQuestion ? (
+							<FormControl component="fieldset">
+								<RadioGroup
+									defaultValue="5"
+									onChange={handleChangeTotalNumberOfQuestion}
+								>
+									<FormControlLabel value="5" control={<Radio />} label="5" />
+									<FormControlLabel value="10" control={<Radio />} label="10" />
+									<FormControlLabel value="20" control={<Radio />} label="20" />
+								</RadioGroup>
+							</FormControl>
+						) : null}
+					</div>
+					<div className="flex-item">
+						{gameOver || userAnswers.length === totalQuestion ? (
+							<p>Select Difficulty:</p>
+						) : null}
+						{gameOver || userAnswers.length === totalQuestion ? (
+							<FormControl component="fieldset">
+								<RadioGroup
+									defaultValue="easy"
+									onChange={handleChangeDifficulty}
+								>
+									<FormControlLabel
+										value="easy"
+										control={<Radio />}
+										label="easy"
+									/>
+									<FormControlLabel
+										value="medium"
+										control={<Radio />}
+										label="medium"
+									/>
+									<FormControlLabel
+										value="hard"
+										control={<Radio />}
+										label="hard"
+									/>
+								</RadioGroup>
+							</FormControl>
+						) : null}
+					</div>
+				</div>
 				{gameOver || userAnswers.length === totalQuestion ? (
 					<Button variant="contained" color="primary" onClick={startTrivia}>
 						Start Here
@@ -142,7 +144,6 @@ const App: React.FC = () => {
 					</p>
 				) : null}
 				{loading ? <p>Loading Questions...</p> : null}
-
 				{!loading && !gameOver && (
 					<QuestionCard
 						questionNo={number + 1}
@@ -163,9 +164,9 @@ const App: React.FC = () => {
 						<ArrowForwardIcon />
 					</Button>
 				) : null}
-
+				<p></p>
 				{!loading && !gameOver && (
-					<Button variant="contained" color="primary" onClick={startTrivia}>
+					<Button variant="contained" onClick={gameExit}>
 						Startover
 					</Button>
 				)}
