@@ -1,0 +1,9 @@
+{
+	"short_name": "Trivia Night",
+	"name": "Trivia Night Quiz App",
+	"icons": [{}],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
+}

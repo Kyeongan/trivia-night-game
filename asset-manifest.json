@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/trivia-night-quiz/static/js/main.a4466d5e.chunk.js",
+    "main.js.map": "/trivia-night-quiz/static/js/main.a4466d5e.chunk.js.map",
+    "runtime-main.js": "/trivia-night-quiz/static/js/runtime-main.b32a3b6e.js",
+    "runtime-main.js.map": "/trivia-night-quiz/static/js/runtime-main.b32a3b6e.js.map",
+    "static/js/2.2bd8d298.chunk.js": "/trivia-night-quiz/static/js/2.2bd8d298.chunk.js",
+    "static/js/2.2bd8d298.chunk.js.map": "/trivia-night-quiz/static/js/2.2bd8d298.chunk.js.map",
+    "index.html": "/trivia-night-quiz/index.html",
+    "static/js/2.2bd8d298.chunk.js.LICENSE.txt": "/trivia-night-quiz/static/js/2.2bd8d298.chunk.js.LICENSE.txt",
+    "static/media/bg.d18429f7.jpg": "/trivia-night-quiz/static/media/bg.d18429f7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b32a3b6e.js",
+    "static/js/2.2bd8d298.chunk.js",
+    "static/js/main.a4466d5e.chunk.js"
+  ]
+}
