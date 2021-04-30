@@ -84,7 +84,7 @@ const App: React.FC = () => {
 		<>
 			<GlobalStyle />
 			<div className="App">
-				<h1>Trivia Night Quiz!</h1>
+				{gameOver ? <h1>Trivia Night Quiz!</h1> : null}
 				<div className="flex-container">
 					<div className="flex-item">
 						{gameOver || userAnswers.length === totalQuestion ? (

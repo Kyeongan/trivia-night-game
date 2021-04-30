@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
 		background: #fff;
 	}
 	h1 {
-		font-size: 80px;
+		font-size: 60px;
 	}
 	.flex-container {
 		/* We first create a flex layout context */
