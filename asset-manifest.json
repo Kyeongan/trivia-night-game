@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/trivia-night-quiz/static/js/main.e3b7e87d.chunk.js",
-    "main.js.map": "/trivia-night-quiz/static/js/main.e3b7e87d.chunk.js.map",
+    "main.js": "/trivia-night-quiz/static/js/main.d51aadd8.chunk.js",
+    "main.js.map": "/trivia-night-quiz/static/js/main.d51aadd8.chunk.js.map",
     "runtime-main.js": "/trivia-night-quiz/static/js/runtime-main.b32a3b6e.js",
     "runtime-main.js.map": "/trivia-night-quiz/static/js/runtime-main.b32a3b6e.js.map",
     "static/js/2.2bd8d298.chunk.js": "/trivia-night-quiz/static/js/2.2bd8d298.chunk.js",
@@ -13,6 +13,6 @@
   "entrypoints": [
     "static/js/runtime-main.b32a3b6e.js",
     "static/js/2.2bd8d298.chunk.js",
-    "static/js/main.e3b7e87d.chunk.js"
+    "static/js/main.d51aadd8.chunk.js"
   ]
 }
