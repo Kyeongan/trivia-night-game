@@ -1,6 +1,6 @@
 {
 	"name": "trivia-night-quiz",
-	"homepage": "https://kyeongan.github.io/trivia-night-quiz/",
+	"homepage": "https://kyeongan.github.io/trivia-night-game/",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
