@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/trivia-night-quiz/static/js/main.d51aadd8.chunk.js",
-    "main.js.map": "/trivia-night-quiz/static/js/main.d51aadd8.chunk.js.map",
-    "runtime-main.js": "/trivia-night-quiz/static/js/runtime-main.b32a3b6e.js",
-    "runtime-main.js.map": "/trivia-night-quiz/static/js/runtime-main.b32a3b6e.js.map",
-    "static/js/2.2bd8d298.chunk.js": "/trivia-night-quiz/static/js/2.2bd8d298.chunk.js",
-    "static/js/2.2bd8d298.chunk.js.map": "/trivia-night-quiz/static/js/2.2bd8d298.chunk.js.map",
+    "main.js": "/trivia-night-quiz/static/js/main.b08930c2.chunk.js",
+    "main.js.map": "/trivia-night-quiz/static/js/main.b08930c2.chunk.js.map",
+    "runtime-main.js": "/trivia-night-quiz/static/js/runtime-main.6ba9201b.js",
+    "runtime-main.js.map": "/trivia-night-quiz/static/js/runtime-main.6ba9201b.js.map",
+    "static/js/2.4ae86e02.chunk.js": "/trivia-night-quiz/static/js/2.4ae86e02.chunk.js",
+    "static/js/2.4ae86e02.chunk.js.map": "/trivia-night-quiz/static/js/2.4ae86e02.chunk.js.map",
     "index.html": "/trivia-night-quiz/index.html",
-    "static/js/2.2bd8d298.chunk.js.LICENSE.txt": "/trivia-night-quiz/static/js/2.2bd8d298.chunk.js.LICENSE.txt",
-    "static/media/bg.d18429f7.jpg": "/trivia-night-quiz/static/media/bg.d18429f7.jpg"
+    "static/js/2.4ae86e02.chunk.js.LICENSE.txt": "/trivia-night-quiz/static/js/2.4ae86e02.chunk.js.LICENSE.txt",
+    "static/media/game-bg.aa12fbf0.jpg": "/trivia-night-quiz/static/media/game-bg.aa12fbf0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b32a3b6e.js",
-    "static/js/2.2bd8d298.chunk.js",
-    "static/js/main.d51aadd8.chunk.js"
+    "static/js/runtime-main.6ba9201b.js",
+    "static/js/2.4ae86e02.chunk.js",
+    "static/js/main.b08930c2.chunk.js"
   ]
 }
