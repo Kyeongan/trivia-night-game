@@ -1,19 +1,19 @@
 import styled, { createGlobalStyle } from "styled-components";
-import BGImage from "./images/bg.jpg";
+import BGImage from "./images/game-bg.jpg";
 
 export const GlobalStyle = createGlobalStyle`
   html {
     height: 100%;
   }
   body {
-    // background-image: url(${BGImage});
+    background-image: url(${BGImage});
     background-size: cover;
     margin: 0px;
     // padding: 100px;
     display: flex;
     justify-content: center;
-		text-align: center
-		
+		text-align: center;
+		color: #fff;
   }
   * {
     font-family: 'Catamaran', sans-serif;
@@ -21,8 +21,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 	p {
 		font-size: 1.5rem;
-		color: #000;
-		background: #fff;
+		color: #fff;
 	}
 	h1 {
 		font-size: 80px;
@@ -47,6 +46,10 @@ export const GlobalStyle = createGlobalStyle`
 		list-style: none;
 	}
 
+	.flex-container > p {
+		color: red
+	}
+
 	.flex-item {
 		// background: tomato;
 		// padding: 5px;
@@ -58,6 +61,10 @@ export const GlobalStyle = createGlobalStyle`
 		// font-weight: bold;
 		// font-size: 3em;
 		// text-align: center;
+	}
+	
+	span.MuiIconButton-label {
+    color: white;
 	}
 `;
 

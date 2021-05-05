@@ -11,6 +11,9 @@ export const Wrapper = styled.div`
 	p {
 		font-size: 1rem;
 	}
+	.question {
+		color: #000;
+	}
 `;
 
 type ButtonWrapperProps = {
