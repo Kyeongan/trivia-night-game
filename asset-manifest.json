@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/trivia-night-game/static/js/main.b08930c2.chunk.js",
-    "main.js.map": "/trivia-night-game/static/js/main.b08930c2.chunk.js.map",
-    "runtime-main.js": "/trivia-night-game/static/js/runtime-main.f5e37a8d.js",
-    "runtime-main.js.map": "/trivia-night-game/static/js/runtime-main.f5e37a8d.js.map",
-    "static/js/2.04d38b46.chunk.js": "/trivia-night-game/static/js/2.04d38b46.chunk.js",
-    "static/js/2.04d38b46.chunk.js.map": "/trivia-night-game/static/js/2.04d38b46.chunk.js.map",
+    "main.js": "/trivia-night-game/static/js/main.baad0887.chunk.js",
+    "main.js.map": "/trivia-night-game/static/js/main.baad0887.chunk.js.map",
+    "runtime-main.js": "/trivia-night-game/static/js/runtime-main.166eaef6.js",
+    "runtime-main.js.map": "/trivia-night-game/static/js/runtime-main.166eaef6.js.map",
+    "static/js/2.0bf66c31.chunk.js": "/trivia-night-game/static/js/2.0bf66c31.chunk.js",
+    "static/js/2.0bf66c31.chunk.js.map": "/trivia-night-game/static/js/2.0bf66c31.chunk.js.map",
     "index.html": "/trivia-night-game/index.html",
-    "static/js/2.04d38b46.chunk.js.LICENSE.txt": "/trivia-night-game/static/js/2.04d38b46.chunk.js.LICENSE.txt",
+    "static/js/2.0bf66c31.chunk.js.LICENSE.txt": "/trivia-night-game/static/js/2.0bf66c31.chunk.js.LICENSE.txt",
     "static/media/game-bg.aa12fbf0.jpg": "/trivia-night-game/static/media/game-bg.aa12fbf0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f5e37a8d.js",
-    "static/js/2.04d38b46.chunk.js",
-    "static/js/main.b08930c2.chunk.js"
+    "static/js/runtime-main.166eaef6.js",
+    "static/js/2.0bf66c31.chunk.js",
+    "static/js/main.baad0887.chunk.js"
   ]
 }
