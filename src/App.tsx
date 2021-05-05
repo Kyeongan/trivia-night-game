@@ -84,13 +84,11 @@ const App: React.FC = () => {
 		<>
 			<GlobalStyle />
 			<div className="App">
-				<h1>Trivia Night Quiz!</h1>
+				{gameOver ? <h1>Trivia Night Quiz!</h1> : null}
 				<div className="flex-container">
 					<div className="flex-item">
-						{gameOver || userAnswers.length === totalQuestion ? (
-							<p>Number of Questions:</p>
-						) : null}
-						{gameOver || userAnswers.length === totalQuestion ? (
+						{gameOver ? <p>Number of Questions:</p> : null}
+						{gameOver ? (
 							<FormControl component="fieldset">
 								<RadioGroup
 									defaultValue="5"
@@ -104,10 +102,8 @@ const App: React.FC = () => {
 						) : null}
 					</div>
 					<div className="flex-item">
-						{gameOver || userAnswers.length === totalQuestion ? (
-							<p>Select Difficulty:</p>
-						) : null}
-						{gameOver || userAnswers.length === totalQuestion ? (
+						{gameOver ? <p>Select Difficulty:</p> : null}
+						{gameOver ? (
 							<FormControl component="fieldset">
 								<RadioGroup
 									defaultValue="easy"
@@ -133,7 +129,7 @@ const App: React.FC = () => {
 						) : null}
 					</div>
 				</div>
-				{gameOver || userAnswers.length === totalQuestion ? (
+				{gameOver ? (
 					<Button variant="contained" color="primary" onClick={startTrivia}>
 						Start Here
 					</Button>
