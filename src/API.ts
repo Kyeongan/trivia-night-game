@@ -18,7 +18,7 @@ export enum Difficulty {
 	HARD = "hard"
 }
 
-export const fetchQuizQuestions = async (
+export const fetchGameQuestions = async (
 	amount: number,
 	difficulty: string
 ) => {

@@ -1,6 +1,6 @@
 {
 	"short_name": "Trivia Night",
-	"name": "Trivia Night Quiz App",
+	"name": "Trivia Night Game App",
 	"icons": [{}],
 	"start_url": ".",
 	"display": "standalone",

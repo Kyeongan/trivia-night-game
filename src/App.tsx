@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { fetchQuizQuestions, Difficulty, QuestionState } from "./API";
+import { fetchGameQuestions, Difficulty, QuestionState } from "./API";
 import { GlobalStyle } from "./App.Styles";
 import { Button } from "@material-ui/core";
 import QuestionCard from "./components/QuestionCard";
@@ -30,7 +30,7 @@ const App: React.FC = () => {
 		setLoading(true);
 		setGameOver(false);
 
-		const newQuestions = await fetchQuizQuestions(totalQuestion, difficulty);
+		const newQuestions = await fetchGameQuestions(totalQuestion, difficulty);
 
 		setQuestions(newQuestions);
 		setScore(0);
@@ -84,7 +84,7 @@ const App: React.FC = () => {
 		<>
 			<GlobalStyle />
 			<div className="App">
-				{gameOver ? <h1>Trivia Night Quiz!</h1> : null}
+				{gameOver ? <h1>Trivia Night Game!</h1> : null}
 				<div className="flex-container">
 					<div className="flex-item">
 						{gameOver ? <p>Number of Questions:</p> : null}
