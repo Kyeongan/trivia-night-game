@@ -169,8 +169,6 @@ Project Link: [https://github.com/Kyeongan/trivia-night-game](https://github.com
 ## Acknowledgements
 
 - []()
-- []()
-- []()
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
